@@ -137,7 +137,7 @@ map.on('load', function() {
         });
 
         if (region.length > 0) {
-            document.getElementById('pd').innerHTML = "</h3><p>" + "<strong>Region: </strong>" + region[0].properties.name + "</h3><p>" + "<strong>Amount(thousand tons): </strong>" + region[0].properties.tons + "</h3><p>" + "<strong>Value($million): </strong>" + region[0].properties.value;
+            document.getElementById('pd').innerHTML = "</h3><p>" + "<strong>Region: </strong>" + region[0].properties.name + "</h3><p>" + "<strong>Amount(thousand tons): </strong>" + region[0].properties.tons + "</h3><p>" + "<strong>Amount Growth(thousand tons): </strong>" + region[0].properties.tons_growt + "</h3><p>" + "<strong>Amount Growth(%): </strong>" + region[0].properties.tons_gro_1 + "</h3><p>" + "<strong>Value($million): </strong>" + region[0].properties.value + "</h3><p>" + "<strong>Value Growth($million): </strong>" + region[0].properties.value_grow + "</h3><p>" + "<strong>Value Growth(%): </strong>" + region[0].properties.value_gr_1;
         } else if (state.length > 0) {
             document.getElementById('pd').innerHTML = "</h3><p>" + "<strong>Region: </strong>" + state[0].properties.name + "</h3><p>" + "<strong>Amount(thousand tons): </strong>" + state[0].properties.tons + "</h3><p>" + "<strong>Amount Growth(thousand tons): </strong>" + state[0].properties.tons_growt + "</h3><p>" + "<strong>Amount Growth(%): </strong>" + state[0].properties.tons_gro_1 + "</h3><p>" + "<strong>Value($million): </strong>" + state[0].properties.value + "</h3><p>" + "<strong>Value Growth($million): </strong>" + state[0].properties.value_grow + "</h3><p>" + "<strong>Value Growth(%): </strong>" + state[0].properties.value_gr_1;
         } else {
